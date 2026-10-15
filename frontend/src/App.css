@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root{font-family:'DM Sans',sans-serif;color:#e8edf7;background:#0b1020}
+*{box-sizing:border-box}
+body{margin:0;min-width:320px;min-height:100vh}
+button,input{font:inherit}
+button{cursor:pointer}
+.app-shell{min-height:100vh;display:flex;background:radial-gradient(ellipse at 80% 0%,#182445,#0b1020 48%)}
+.sidebar{width:245px;flex-shrink:0;padding:30px 20px;border-right:1px solid #242d43;background:#0b1020;display:flex;flex-direction:column;gap:15px}
+.brand{display:flex;align-items:center;gap:11px;font:700 20px 'Space Grotesk',sans-serif;margin-bottom:45px}
+.brand-icon,.hero-symbol{display:grid;place-items:center;background:linear-gradient(135deg,#8b7cff,#4e6bff);border-radius:12px;color:white;font-weight:700}
+.brand-icon{width:37px;height:37px}
+.side-label,.eyebrow{font-size:10px;letter-spacing:1.8px;color:#7f8ba7;font-weight:700}
+.side-active,.side-item{padding:13px 14px;border-radius:9px;font-size:13px;color:#9ba8c2}
+.side-active{background:#202b49;color:#c9c9ff;border:1px solid #303c60}
+.node-status{margin-top:auto;border:1px solid #27344a;background:#111a2d;padding:15px;border-radius:12px;font-size:12px;line-height:2;color:#dce5f7}
+.node-status span,.top-status span{display:inline-block;width:7px;height:7px;background:#42d6a0;border-radius:50%;margin-right:8px}
+.node-status small{color:#8795b0;margin-left:15px}
+.main-panel{width:min(1120px,100%);margin:0 auto;padding:34px 44px;display:flex;flex-direction:column;min-height:100vh}
+.topbar,.welcome-row,.files-heading,.file-row,footer{display:flex;align-items:center;justify-content:space-between;gap:20px}
+h1,h2,p{margin-top:0}
+h1,h2{font-family:'Space Grotesk',sans-serif}
+h1{font-size:32px;margin:7px 0 0}
+h2{font-size:20px;margin-bottom:7px}
+.top-status{border:1px solid #2a3850;background:#111a2d;padding:10px 13px;border-radius:30px;font-size:12px;color:#b8c7dc}
+.welcome-row{margin:42px 0 25px}
+.welcome-row p,.files-heading p,.login-card p{color:#8f9bb5;font-size:13px}
+.upload-button,button{border:0;border-radius:9px;background:#7768f7;color:white;padding:12px 17px;font-weight:600;font-size:13px}
+.upload-button input{display:none}
+.stats-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.stat-card,.files-card,.login-card{border:1px solid #28344b;background:linear-gradient(145deg,#141d31,#101728);border-radius:15px}
+.stat-card{padding:21px;display:flex;flex-direction:column;gap:10px}
+.stat-card span,.stat-card small{font-size:12px;color:#8f9bb5}
+.stat-card strong{font:600 24px 'Space Grotesk',sans-serif}
+.stat-card small{font-size:11px}
+.green-text{color:#42d6a0}
+.files-card{margin-top:23px;padding:24px}
+.files-heading{margin-bottom:15px}
+.files-heading p{margin-bottom:0}
+.secondary-button{background:#202b42;border:1px solid #34425e;padding:9px 12px;white-space:nowrap}
+.file-row{padding:15px 0;border-top:1px solid #263148}
+.file-icon{width:40px;height:43px;display:grid;place-items:center;background:#24254c;color:#aaa2ff;border-radius:9px;font-size:20px}
+.file-info{flex:1;display:flex;flex-direction:column;gap:6px;min-width:0}
+.file-info strong{font-size:13px;overflow-wrap:anywhere}
+.file-info small{font-size:11px;color:#8f9bb5}
+.empty-state{text-align:center;padding:35px;color:#8f9bb5;font-size:13px}
+.login-card{width:min(420px,100%);margin:70px auto;padding:35px;display:flex;flex-direction:column;gap:12px}
+.hero-symbol{width:54px;height:54px;font:700 28px 'Space Grotesk',sans-serif}
+.login-card h2{margin:8px 0 0;font-size:24px}
+.login-card label{font-size:12px;color:#c2cce0;margin-top:5px}
+.login-card input{width:100%;padding:12px 13px;border-radius:8px;border:1px solid #34415c;background:#0b1222;color:white;outline:none}
+.login-card input:focus{border-color:#8175ff}
+.login-card button{margin-top:9px;padding:14px}
+.login-card small{font-size:11px;text-align:center;color:#7f8ba7;margin-top:6px}
+.notice{margin-top:18px;padding:12px 15px;border:1px solid #34415c;background:#131e32;border-radius:9px;color:#bfcaff;font-size:12px}
+footer{margin-top:auto;padding-top:40px;color:#6f7d98;font-size:11px}
+footer button{background:transparent;color:#9ca9c1;padding:5px}
+@media(max-width:750px){.sidebar{display:none}.main-panel{padding:25px 18px}.stats-grid{grid-template-columns:1fr}.welcome-row{align-items:flex-start;flex-direction:column}.top-status{font-size:10px}.file-row{gap:10px}.files-card{padding:16px}.file-info small{overflow-wrap:anywhere}}
