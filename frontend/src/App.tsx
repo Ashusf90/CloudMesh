@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./App.css";
 
 export default function App() {
-  const [api, setApi] = useState("http://localhost:5001/api");
+  const [api] = useState("http://localhost:5001/api");
   const [token, setToken] = useState("");
   const [email, setEmail] = useState("cloudmesh-test@example.com");
   const [password, setPassword] = useState("CloudMeshTest123!");
